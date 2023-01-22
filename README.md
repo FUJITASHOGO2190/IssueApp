@@ -5,6 +5,7 @@
 - 運用中のアプリに関して、新たに見つかった課題を管理するためのアプリ。
 - アプリ開発上の課題はイシューと呼ばれることが多いため、名称を「IssueApp」と命名。
 - タイトル、イシューの内容、その対応期限、重要度を入力し、一覧で表示できる。
+- フレームワークを用いたMVCの流れ、IntelliJ IDEAとSpring Bootの基本的な使い方を理解するために作成。
 
 # 利用方法
 - トップページの右上の新規作成ボタンから投稿できる。
@@ -14,7 +15,7 @@
 - 完了したイシューは右側の削除ボタンで削除する。
 
 # 実装機能
-### トップページ
+### トップ(一覧)ページ
 [![Image from Gyazo](https://i.gyazo.com/266972f604d502c8c61150cd002a4048.png)](https://gyazo.com/266972f604d502c8c61150cd002a4048)
 
 ### 作成機能
@@ -27,3 +28,22 @@
 [![Image from Gyazo](https://i.gyazo.com/702918cd7847c3ed0a42e9937d2bb796.gif)](https://gyazo.com/702918cd7847c3ed0a42e9937d2bb796)
 
 # テーブル設計
+| Column | Type | Options |
+| --- | --- | --- |
+| id | long | NOT NULL, PRIMARY KEY ,AUTO_INCREMENT, |
+| title | string | NOT NULL |
+| content | string | NOT NULL |
+| period | string | NOT NULL |
+| importance | string | NOT NULL |
+
+# 画面遷移図
+[![Image from Gyazo](https://i.gyazo.com/29d27e881f48b8ce525bb44d04922dfc.png)](https://gyazo.com/29d27e881f48b8ce525bb44d04922dfc)
+
+# 開発環境
+- Java
+- IntelliJ IDEA
+- Spring Boot
+- Spring Web
+- MySQL
+- MyBatis
+- GitHub
